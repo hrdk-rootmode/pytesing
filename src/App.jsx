@@ -9,6 +9,48 @@ function App() {
 
   return (
     <>
+    <div style={{ fontFamily: "Arial, sans-serif" }}>
+  {/* header + sections */}
+</div>
+    <header
+  style={{
+    width: "100%",
+    padding: "15px 40px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    borderBottom: "1px solid #2a2a40",
+    background: "#0f0f1a",
+    position: "sticky",
+    top: 0,
+    zIndex: 10,
+  }}
+>
+  {/* LOGO / TITLE */}
+  <h2 style={{ color: "#fff", margin: 0 }}>MyApp</h2>
+
+  {/* NAV */}
+  <nav style={{ display: "flex", gap: "20px" }}>
+    <a href="#" style={{ color: "#aaa", textDecoration: "none" }}>Home</a>
+    <a href="#" style={{ color: "#aaa", textDecoration: "none" }}>Features</a>
+    <a href="#" style={{ color: "#aaa", textDecoration: "none" }}>Contact</a>
+  </nav>
+
+  {/* CTA BUTTON */}
+  <button
+    style={{
+      padding: "8px 16px",
+      background: "linear-gradient(135deg, #646cff, #7c3aed)",
+      color: "white",
+      border: "none",
+      borderRadius: "6px",
+      cursor: "pointer",
+      fontWeight: "bold",
+    }}
+  >
+    Login
+  </button>
+</header>
       {/* MAIN SECTION */}
       <section
         id="center"
