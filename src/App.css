@@ -18,7 +18,11 @@
 }
 
 .hero {
-  position: relative;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
 
   .base,
   .framework,
@@ -36,6 +40,9 @@
   .framework,
   .vite {
     position: absolute;
+    /* left: -73%; */
+    
+    transform-origin: center;
   }
 
   .framework {
@@ -58,10 +65,7 @@
 
 #center {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
+  justify-content: space-between;
   flex-grow: 1;
 
   @media (max-width: 1024px) {
